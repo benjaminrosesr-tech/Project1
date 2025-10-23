@@ -1,4 +1,52 @@
 .caratext {
-    color: aliceblue;
-    text-shadow: 2px 2px 4px black;
+  color: aliceblue;
+  text-shadow: 2px 2px 4px black;
+}
+
+.portfolio-carousel {
+  max-width: 700px;
+  max-height: 500px;
+  margin: 2rem auto; /* Adds some space and centers the carousel */
+}
+
+.profile {
+  display: block;
+  margin: 0 auto;
+  border-radius: 100px 0px 100px 100px;
+  box-shadow: 5px 5px 10px rgb(27, 27, 27);
+  width: 60%;
+}
+.bubble {
+  display: block;
+  margin: 0 auto;
+  border-radius: 100%;
+  width: 60%;
+}
+.Title {
+  font-weight: Bolder;
+  text-align: center;
+  font-size: xx-large;
+  text-shadow: 2px 2px 4px black;
+}
+
+.subs {
+  font-weight: bolder;
+  text-align: center;
+  text-shadow: 2px 2px 4px black;
+}
+
+.site-footer {
+  /* Using Bootstrap's CSS variables for theme-aware background */
+  background-color: var(--bs-tertiary-bg);
+  color: var(--bs-secondary-color);
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  color: var(--bs-secondary-color);
+  margin: 0 0.75rem;
+  transition: color 0.2s ease-in-out;
+}
+.social-icon:hover {
+  color: var(--bs-primary);
 }
