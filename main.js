@@ -87,18 +87,5 @@ document.addEventListener("DOMContentLoaded", () => {
   // Load Footer
   loadComponent("/components/footer.html", "footer-placeholder");
 
-  // Initial theme setup to prevent FOUC (Flash of Unstyled Content)
-  // This is a simplified version of the inline script.
-  // The full logic runs again in initializeThemeSwitcher to attach event listeners.
-  (() => {
-    const theme = getPreferredTheme();
-    document.documentElement.setAttribute(
-      "data-bs-theme",
-      theme === "auto"
-        ? window.matchMedia("(prefers-color-scheme: dark)").matches
-          ? "dark"
-          : "light"
-        : theme
-    );
-  })();
+  // The theme switcher is initialized in onNavbarLoad to ensure the elements exist.
 });

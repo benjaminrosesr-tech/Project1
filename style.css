@@ -57,7 +57,7 @@
   overflow: hidden;
   border-radius: 50%;
   aspect-ratio: 1 / 1; /* Ensures the container is always a square */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
   transition: border-radius 0.4s ease-in-out;
 }
 
@@ -84,10 +84,20 @@
 }
 
 .photo-item:hover {
-  border-radius: 0; /* Becomes a square on hover */
+  /* Make it expand above other elements */
+  position: fixed; /* Position relative to the viewport */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the element */
+  z-index: 10;
+  width: 700px; /* Set a fixed width for the hovered container */
+  height: auto; /* Allow height to be determined by content */
+  max-width: 700px; /* Set a maximum width for the hovered image */
+  border-radius: 0;
 }
 .photo-item:hover img {
-  transform: scale(1.1); /* "Blows up" the image */
+  width: 100%; /* Make image fill the container's width */
+  height: auto; /* Use image's natural height */
 }
 .photo-item:hover .photo-description {
   opacity: 1; /* Fades in the description */

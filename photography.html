@@ -35,115 +35,229 @@
     </script>
   </head>
   <body class="d-flex flex-column min-vh-100">
-    <!-- Navbar will be loaded here -->
-    <div id="navbar-placeholder"></div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">Rose Digital Imaging</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./logo.html">Logos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./photography.html"
+                >Photography</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./advertisement.html">Advertisements</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contactme.html">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <button
+                class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle"
+                id="bd-theme"
+                type="button"
+                aria-expanded="false"
+                data-bs-toggle="dropdown"
+                aria-label="Toggle theme (auto)"
+              >
+                <i
+                  class="bi bi-sun-fill my-1 theme-icon-active"
+                  id="light-theme-icon"
+                ></i>
+                <i
+                  class="bi bi-moon-stars-fill my-1 theme-icon-active d-none"
+                  id="dark-theme-icon"
+                ></i>
+              </button>
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="bd-theme"
+              >
+                <li>
+                  <button
+                    type="button"
+                    class="dropdown-item d-flex align-items-center"
+                    data-bs-theme-value="light"
+                  >
+                    <i class="bi bi-sun-fill me-2"></i> Light
+                  </button>
+                </li>
+                <li>
+                  <button
+                    type="button"
+                    class="dropdown-item d-flex align-items-center"
+                    data-bs-theme-value="dark"
+                  >
+                    <i class="bi bi-moon-stars-fill me-2"></i> Dark
+                  </button>
+                </li>
+                <li>
+                  <button
+                    type="button"
+                    class="dropdown-item d-flex align-items-center"
+                    data-bs-theme-value="auto"
+                  >
+                    <i class="bi bi-circle-half me-2"></i> Auto
+                  </button>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <main class="container mt-4 flex-shrink-0">
-      <h1 class="Title">Our Photography</h1>
+      <h1 class="Title">Photography</h1>
       <p class="text-center lead mb-5">
         Capturing moments, telling stories. Hover over an image to see more.
       </p>
 
       <div class="row g-4">
-        <!-- Create 8 of these blocks for your images -->
-        <div class="col-12 col-md-6 col-lg-3">
+        <!-- Photo 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
           <div class="photo-item">
             <img
               src="./images/Photography/photo1.jpg"
-              alt="Description of photo 1"
+              alt="Picture of boy Black and white"
             />
             <div class="photo-description">
-              <p>Image Description 1</p>
+              <p>
+                Picture of a young boy staring off into the void thinking the
+                future.
+              </p>
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-3">
+        <!-- Photo 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
           <div class="photo-item">
             <img
               src="./images/Photography/photo2.jpg"
-              alt="Description of photo 2"
+              alt="black and white picture of a borther and sister"
             />
             <div class="photo-description">
-              <p>Image Description 2</p>
+              <p>
+                Two siblings after a long easter relaxing in front of a tree
+                planted at their birth
+              </p>
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-3">
+        <!-- Photo 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
           <div class="photo-item">
             <img
               src="./images/Photography/photo3.jpg"
-              alt="Description of photo 3"
+              alt="picture of a tube slide"
             />
             <div class="photo-description">
-              <p>Image Description 3</p>
+              <p>
+                An image taken to showcase cirlces and how they bend along a
+                path
+              </p>
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-3">
+        <!-- Photo 4 -->
+        <div class="col-12 col-md-6 col-lg-4">
           <div class="photo-item">
             <img
               src="./images/Photography/photo4.jpg"
-              alt="Description of photo 4"
+              alt="Fire fighter silouette"
             />
             <div class="photo-description">
-              <p>Image Description 4</p>
+              <p>
+                Each year the town has a burning of christmas trees after their
+                use caught a firefighter silouetted by the inferno behind him
+              </p>
             </div>
           </div>
         </div>
-              <div class="row g-4">
-        <!-- Create 8 of these blocks for your images -->
-        <div class="col-12 col-md-6 col-lg-3">
+        <!-- Photo 5 -->
+        <div class="col-12 col-md-6 col-lg-4">
           <div class="photo-item">
             <img
               src="./images/Photography/photo5.jpg"
-              alt="Description of photo 1"
+              alt="Woman posing as an Angel"
             />
             <div class="photo-description">
-              <p>Image Description 1</p>
+              <p>
+                Took a models picture and used photoshop to give her a more
+                angelic Vibe
+              </p>
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-3">
+        <!-- Photo 6 -->
+        <div class="col-12 col-md-6 col-lg-4">
           <div class="photo-item">
             <img
               src="./images/Photography/photo6.jpg"
-              alt="Description of photo 2"
+              alt="Cosplay Model dressed as an elf"
             />
             <div class="photo-description">
-              <p>Image Description 2</p>
+              <p>
+                Another model dressed as an elf coming out of a dark depression
+                to the light
+              </p>
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-3">
+        <!-- Photo 7 -->
+        <div class="col-12 col-md-6 col-lg-4">
           <div class="photo-item">
             <img
               src="./images/Photography/photo7.jpg"
-              alt="Description of photo 3"
+              alt="Devious lady in red"
             />
             <div class="photo-description">
-              <p>Image Description 3</p>
+              <p>This is an image created for a model friend</p>
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-3">
+        <!-- Photo 8 -->
+        <div class="col-12 col-md-6 col-lg-4">
           <div class="photo-item">
-            <img
-              src="./images/Photography/photo8.jpg"
-              alt="Description of photo 4"
-            />
+            <img src="./images/Photography/photo8.jpg" alt="Fallen Angel" />
             <div class="photo-description">
-              <p>Image Description 4</p>
+              <p>
+                Woamn are compared to angels. This is one molded by years of
+                abouse and neglect
+              </p>
             </div>
           </div>
         </div>
-        <!-- Add 4 more blocks here for images 5-8 -->
       </div>
     </main>
 
     <!-- Footer will be loaded here -->
     <div id="footer-placeholder"></div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-s2wqL3b2e/2Jz27gvyN/L4rL5JjA/3bU2/JdGf/gSHj/t2lG/S/s/d/3b"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
