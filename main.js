@@ -20,21 +20,24 @@ document.addEventListener("DOMContentLoaded", () => {
       .catch((error) => console.error("Error loading component:", error));
   };
 
-  // --- NAVBAR LOGIC ---
-  const onNavbarLoad = () => {
-    // Set active navigation link
+  const setActiveNavLink = () => {
     const currentPage =
       window.location.pathname.split("/").pop() || "index.html";
     const navLinks = document.querySelectorAll("#mainNav .nav-link");
     navLinks.forEach((link) => {
+      link.classList.remove("active");
+      link.removeAttribute("aria-current");
       if (link.getAttribute("href").includes(currentPage)) {
         link.classList.add("active");
         link.setAttribute("aria-current", "page");
       }
     });
+  };
 
-    // Re-initialize theme switcher after it's loaded
-    initializeThemeSwitcher();
+  // --- NAVBAR LOGIC ---
+  const onNavbarLoad = () => {
+    setActiveNavLink();
+    initializeThemeSwitcher(); // Initialize switcher after navbar is loaded
   };
 
   // --- THEME SWITCHER LOGIC ---
@@ -56,10 +59,8 @@ document.addEventListener("DOMContentLoaded", () => {
           ? "dark"
           : "light"
         : theme;
-
     document.documentElement.setAttribute("data-bs-theme", effectiveTheme);
 
-    // Update active icons
     const lightIcon = document.getElementById("light-theme-icon");
     const darkIcon = document.getElementById("dark-theme-icon");
     if (lightIcon && darkIcon) {
@@ -70,7 +71,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const initializeThemeSwitcher = () => {
     setTheme(getPreferredTheme());
-
     document.querySelectorAll("[data-bs-theme-value]").forEach((toggle) => {
       toggle.addEventListener("click", () => {
         const theme = toggle.getAttribute("data-bs-theme-value");
@@ -81,11 +81,12 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   // --- INITIALIZE EVERYTHING ---
-  // Load Navbar, then run its setup logic
+  // Run initializations that work for pages with hardcoded navbars.
+  setActiveNavLink();
+  initializeThemeSwitcher();
+
+  // Load Navbar and Footer components if their placeholders exist.
+  // The onNavbarLoad callback will re-run initializations for the loaded content.
   loadComponent("/components/navbar.html", "navbar-placeholder", onNavbarLoad);
-
-  // Load Footer
   loadComponent("/components/footer.html", "footer-placeholder");
-
-  // The theme switcher is initialized in onNavbarLoad to ensure the elements exist.
 });
