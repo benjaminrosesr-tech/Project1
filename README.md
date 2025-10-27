@@ -21,5 +21,5 @@ Benjamin Rose
 <img src="./wireframe/photography.jpg">
 <img src="./wireframe/advertisements.jpg">
 <img src="./wireframe/contact.jpg">
-<img src="./wireframe/success.jpg">
+<img src="./wireframe/sucess.jpg">
 
