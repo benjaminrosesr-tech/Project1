@@ -3,6 +3,12 @@
   text-shadow: 2px 2px 4px black;
 }
 
+.caratext2 {
+  font-weight: bolder;
+  color: aliceblue;
+  text-shadow: 2px 2px 4px black;
+}
+
 .portfolio-carousel {
   max-width: 700px;
   max-height: 500px;
