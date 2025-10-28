@@ -65,3 +65,21 @@
     });
   });
 })();
+
+
+/*!
+ * Image Modal Handler
+ */
+const imageModal = document.getElementById('imageModal');
+if (imageModal) {
+  imageModal.addEventListener('show.bs.modal', event => {
+    // Button that triggered the modal
+    const button = event.relatedTarget;
+    // Extract info from data-bs-* attributes
+    const imgSrc = button.getAttribute('data-img-src');
+    // Update the modal's content.
+    const modalImage = imageModal.querySelector('#modalImage');
+    modalImage.src = imgSrc;
+  });
+}
+
