@@ -23,3 +23,5 @@ Benjamin Rose
 <img src="./wireframe/contact.jpg">
 <img src="./wireframe/sucess.jpg">
 
+## Future Plans
+In the future, I would love to get the redirect after submitting the form to go back to my website, which I thought I had made work.  It would seem I need to look a little deeper into Java to make that portion work. I will also be adding modal pop-ups to the photography page to where it displays a card format with picture on top and a little blurb about the picture below.
