@@ -1,5 +1,5 @@
 # Portfolio
-This website is being used as a portfolio to showcase the abilities and scope of talent brought by Rose Digital Imaging
+This website serves as a portfolio to showcase the abilities and scope of talent offered by Rose Digital Imaging. This site will showcase the full range of abilities and skills I bring to Logos Brand Design, Photography, and Advertising.  As I expand my abilities in full-stack development, I will also showcase those projects and abilities there as well. As this is a work portfolio, I will always be expanding and making changes as time goes on
 
 ## Developer
 Benjamin Rose
@@ -25,3 +25,4 @@ Benjamin Rose
 
 ## Future Plans
 In the future, I would love to get the redirect after submitting the form to go back to my website, which I thought I had made work.  It would seem I need to look a little deeper into Java to make that portion work. I will also be adding modal pop-ups to the photography page to where it displays a card format with picture on top and a little blurb about the picture below.
+
