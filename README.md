@@ -16,16 +16,16 @@ Benjamin Rose
 
 ## User Stories
 
-1. I want this website to be responsive across different screen sizes with a theme switcher. The navigation should also be easy to follow and simple to navigate.
-2. There should be a page for logos, a page for photography, and a page for advertisements. Each should showcase the work in a different format; for example, the advertisement page should include an image to view the advertisement in full format.
-3. I want the contact page to include a simple form for people to fill out in the advent that they would like some work done. make it a little informal yet require phone number, name, and email. Also make it so it sends me an email of the form upon completion. Then redirect the user to a success page and a button returning them to the home page.
+1. As a user, I want this website to be responsive across different screen sizes with a theme switcher. The navigation should also be easy to follow and simple to navigate.
+2. As a user, there should be a page for logos, a page for photography, and a page for advertisements. Each should showcase the work in a different format; for example, the advertisement page should include an image to view the advertisement in full format.
+3. As a user,I want the contact page to include a simple form for people to fill out in the advent that they would like some work done. make it a little informal yet require phone number, name, and email. Also make it so it sends me an email of the form upon completion. Then redirect the user to a success page and a button returning them to the home page.
 
 ## WireFrame
 <img src="./wireframe/index wireframe.svg">
 <img src="./wireframe/home screen.png">
 <img src="./wireframe/logos.png">
-<img src="./wireframe/photography.png">
-<img src="./wireframe/advertisements.png">
+<img src="./wireframe/photo.png">
+<img src="./wireframe/advert.png">
 <img src="./wireframe/contact.png">
 
 
